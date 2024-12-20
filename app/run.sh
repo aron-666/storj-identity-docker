@@ -5,11 +5,11 @@ if [ -d /root/.local/share/storj/identity/storagenode ]; then
     exit 1
 fi
 
-curl -L https://github.com/storj/storj/releases/latest/download/identity_linux_amd64.zip -o identity_linux_amd64.zip
+curl -L https://github.com/storj/storj/releases/latest/download/identity_linux_$TARGETARCH.zip -o identity_linux.zip
 
-unzip -o identity_linux_amd64.zip
+unzip -o identity_linux.zip
 
-rm identity_linux_amd64.zip
+rm identity_linux.zip
 
 chmod +x identity
 
