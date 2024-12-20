@@ -15,7 +15,7 @@ chmod +x identity
 
 ./identity create storagenode
 
-./identity create storagenode $EMAIL_TOKEN
+./identity authorize storagenode $EMAIL_TOKEN
 
 # check grep -c BEGIN ~/.local/share/storj/identity/storagenode/ca.cert is 2
 if [ $(grep -c BEGIN /root/.local/share/storj/identity/storagenode/ca.cert) -ne 2 ]; then

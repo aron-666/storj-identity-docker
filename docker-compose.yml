@@ -1,6 +1,6 @@
 version: '3'
 services:
-  vpnserver:
+  storj-identity:
     image: aron666/storj-identity
     environment:
       EMAIL_TOKEN: "email:token" 
