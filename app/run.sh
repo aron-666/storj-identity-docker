@@ -28,3 +28,6 @@ if [ $(grep -c BEGIN /root/.local/share/storj/identity/storagenode/identity.cert
     echo "identity.cert is invalid"
     exit 1
 fi
+
+
+echo "-----------identity successfully created !!-------------"
