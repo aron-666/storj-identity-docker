@@ -1,0 +1,15 @@
+version: '3'
+services:
+  vpnserver:
+    image: aron666/storj-identity
+    environment:
+      EMAIL_TOKEN: "email:token" 
+    volumes:
+      - ./identity:/root/.local/share/storj/identity
+    stdin_open: true
+
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        TARGETARCH: amd64
